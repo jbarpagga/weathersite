@@ -1,5 +1,3 @@
-console.log('Client side java script file is loaded')
-
 //fetch takes url and callback function.  We are saying fetch data from the url and then run the function
 //response is the data received from url.  .json() turns into java script object and then whatever "data" is received from response.json is printed to the console.
 
