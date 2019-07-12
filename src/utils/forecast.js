@@ -10,7 +10,7 @@ debugger;
         }else if (body.error) {
             callback('No such location found, please try another name', undefined);
         }else {
-            callback(undefined,`It is currently ${body.currently.temperature} degrees out. There is a
+            callback(undefined,`Maximum temperature is around ${body.daily.data[0].temperatureMax} with minimum of ${body.daily.data[0].temperatureMin}. It is currently ${body.currently.temperature} degrees out. There is a
             ${body.currently.precipProbability}% chance of rain.`);
         }
     })
